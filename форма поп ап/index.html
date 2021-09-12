@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href ="#popup"> <button class="popup_btn popup_link">Кликни!</button></a>
+    <div id="popup" class="popup">
+        <a href="#" class="popup_area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a class="popup__close close_popup" href="#header"><img src="img/close.png" alt=""></a>
+                    
+                <div class="popup__title">
+                    <div class="popup__text">
+                        <div class="f_comp">
+                                <h1 class="f_comp-h1">Получите набор файлов <br> для руководителя: </h1>
+                                <img class="f_comp-img" src="img/f_comp.png" alt="">
+                                <img class="f_mob-img" src="img/f_mob.png" alt="">
+                                <h1 class="f_mob-h1">Получите набор файлов <br> для руководителя: </h1>
+                            </div>
+                            <div class="form_container">
+                                <form action="send.php" method="post">
+                                <p class="form_text">Введите Email для получения файлов: </p>
+                                <input class="form_input" type="email" name="email" size="15" maxlength="20" value=""  placeholder="E-mail">
+
+                                <p class="form_text">Введите телефон для подтведждения доступа:</p>
+                                <input class="form_input tel" type="tel" name="tel" size="15" maxlength="20" value="" placeholder="+7(000)000-00-00" required>
+
+                                <div  class="pb3"><input class="pbutton3" type="submit" value="Скачать файлы">
+                               <img id="f_comp-palec" class="f_comp-img" src="img/palec.png" alt="">
+                               <img id="f_mob-palec" src="img/palec_mob.png" alt="">
+                                </div>
+                                <div class="file_size">
+                                    <p>PDF 4.7 MB </p>
+                                    <p>DOC 0.8 MB</p>
+                                    <p>XLS 1.2 MB</p>
+                                </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+ <script src="js/popup.js"></script>
+</body>
+</html>
